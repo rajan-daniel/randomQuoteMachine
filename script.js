@@ -7,23 +7,19 @@ let currQuote = ""
 let currAuthor = ""
 
 async function getQuote() {
-  const response = await fetch('https://dummyjson.com/quotes/random')
+  await fetch('https://dummyjson.com/quotes/random')
     .then(res => res.json())
     .then(data => {
       currQuote = data.quote;
       currAuthor = data.author;
+      quote.textContent = currQuote;
+      author.textContent = currAuthor;
     });
 }
 
 /* ON PAGE LOAD RUN */
-document.addEventListener("DOMContentLoaded", () => {
-  getQuote();
-  quote.textContent = currQuote;
-  author.textContent = currAuthor;
-});
+quoteBtn.addEventListener("click", getQuote);
 
-quoteBtn.addEventListener("click", () => {
+window.onload = function () {
   getQuote();
-  quote.textContent = currQuote;
-  author.textContent = currAuthor;
-});
+};
