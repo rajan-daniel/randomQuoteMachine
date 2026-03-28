@@ -1,7 +1,7 @@
 const quote = document.getElementById(`quote`)
 const author = document.getElementById(`author`)
 const quoteBtn = document.getElementById(`new-quote-btn`)
-const twitterBtn = document.getElementById(`twitter-btn`)
+const twitterIcon = document.getElementById(`twitter-icon`)
 
 let currQuote = ""
 let currAuthor = ""

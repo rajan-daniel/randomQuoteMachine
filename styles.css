@@ -23,7 +23,7 @@ body {
     align-items: center;
 }
 
-#twitter-btn,
+#twitter-icon,
 #new-quote-btn {
     background-color: var(--accent-color);
     color: white;
