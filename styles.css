@@ -11,7 +11,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-#generator-container {
+#quote-box {
     border-radius: 10px;
     margin: 8% auto;
     width: 450px;
@@ -23,13 +23,13 @@ body {
     align-items: center;
 }
 
-#twitter-icon,
-#new-quote-btn {
+#tweet-quote,
+#new-quote {
     background-color: var(--accent-color);
     color: white;
 }
 
-#quote,
+#text,
 #author {
     color: var(--accent-color)
 }
