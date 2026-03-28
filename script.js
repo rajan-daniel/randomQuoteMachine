@@ -15,14 +15,14 @@ async function getQuote() {
     });
 }
 
-quoteBtn.addEventListener("click", () => {
+/* ON PAGE LOAD RUN */
+document.addEventListener("DOMContentLoaded", () => {
   getQuote();
   quote.textContent = currQuote;
   author.textContent = currAuthor;
 });
 
-/* ON PAGE LOAD RUN */
-document.addEventListener("DOMContentLoaded", () => {
+quoteBtn.addEventListener("click", () => {
   getQuote();
   quote.textContent = currQuote;
   author.textContent = currAuthor;
