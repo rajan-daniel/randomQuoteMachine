@@ -12,8 +12,8 @@ async function getQuote() {
     .then(data => {
       currQuote = data.quote;
       currAuthor = data.author;
-      quote.textContent = currQuote;
-      author.textContent = currAuthor;
+      quote.textContent = `"${currQuote}"`;
+      author.textContent = `-${currAuthor}`;
     });
 }
 
